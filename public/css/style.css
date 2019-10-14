@@ -1,0 +1,117 @@
+.body {
+  overflow-x: hidden;
+  word-wrap: break-word;
+}
+
+.kv {
+  background: url("../images/music1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  opacity: 0.65;
+  position: relative;
+}
+
+.kv__caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  line-height: 1.2;
+  width: 40%;
+  letter-spacing: 0.4rem;
+  text-align: center;
+  background-color: white;
+  padding: 20px 0;
+}
+
+.desc {
+  padding: 50px;
+}
+
+.desc--pale {
+  background-color: rgba(240, 240, 240, 0.8);
+}
+
+.desc__caption {
+  color: #666;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.6rem;
+  padding: 0 0 30px;
+}
+
+.desc__paragraph {
+  color: #888;
+}
+
+.desc__paragraph + .desc__paragraph {
+  margin-top: 20px;
+}
+
+.message {
+  background-image: url("../images/music2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40vh;
+  position: relative;
+}
+
+.message__caption {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  letter-spacing: 1.5rem;
+  line-height: 1.8;
+  text-align: center;
+  font-size: 24px;
+  opacity: 0.5;
+}
+
+.animation {
+  height: 100vh;
+  background: url("../images/music4.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400vh;
+  opacity: 0.65;
+  position: relative;
+}
+
+.animation__item {
+  width: 30vw;
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  padding: 5vw;
+}
+
+.animation__item--1 {
+  left: 10vw;
+  top: 30vh;
+}
+
+.animation__item--2 {
+  right: 10vw;
+  top: 100vh;
+}
+
+.animation__caption {
+  text-align: center;
+}
+
+.animation__desc {
+  margin-top: 20px;
+  line-height: 1.2;
+}
+
+.js-fixed {
+  position: fixed;
+  top: 100vh;
+}
