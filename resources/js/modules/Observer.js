@@ -9,20 +9,25 @@ export default class extends Events {
   }
 
   createObserver($arrayItems) {
+    let thresholdSet = [];
+    for (let i = 0; i < 1.0; i += 0.01) {
+      thresholdSet.push(i);
+    }
+
     const observer = new IntersectionObserver(
       (entries, object) => {
         entries.forEach(entry => {
-          console.log(entry);
           if (!entry.isIntersecting) return;
+          console.log(entry.intersectionRatio);
           const $element = entry.target;
           this.notify($element);
-          object.unobserve($element);
+          // object.unobserve($element);
         });
       },
       {
         root: null,
-        // rootMargin: 0,
-        threshold: 0
+        rootMargin: '-10% 0%',
+        threshold: thresholdSet
       }
     );
 
